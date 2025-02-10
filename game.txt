@@ -1,0 +1,18 @@
+import random  # Importamos la librería para generar números aleatorios
+
+# Generar un número secreto entre 1 y 10
+numero_secreto = random.randint(1, 10)
+
+print("🎯 ¡Adivina el número secreto entre 1 y 10!")
+
+# Bucle para que el juego continúe hasta que adivine
+while True:
+    intento = int(input("Ingresa tu número: "))
+
+    if intento < numero_secreto:
+        print("🔼 El número secreto es MAYOR.")
+    elif intento > numero_secreto:
+        print("🔽 El número secreto es MENOR.")
+    else:
+        print(f"🎉 ¡Felicidades! Adivinaste el número secreto: {numero_secreto}")
+        break  # Salir del bucle cuando adivine

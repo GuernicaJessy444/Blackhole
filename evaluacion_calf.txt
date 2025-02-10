@@ -1,0 +1,12 @@
+# Solicitar la calificación al usuario
+calificacion = int(input("Ingresa tu calificación (0-100): "))
+
+# Verificar si la calificación está dentro del rango válido
+if 0 <= calificacion <= 100:
+    # Evaluar si está aprobado o reprobado
+    if calificacion >= 60:
+        print("¡Aprobaste master!")
+    else:
+        print("Reprobaste master.")
+else:
+    print("Calificación no válida. Debe estar entre 0 y 100.")
